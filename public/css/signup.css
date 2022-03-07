@@ -1,0 +1,193 @@
+/* COMPUTER STYLE
+   ========================================================================== */
+@media screen and (min-width: 800px) {
+   
+   /* BODY PROPERTIES
+      ========================================================================== */
+   body {
+      background-color: var(--dark_second);
+      font-family: 'Merriweather Sans', sans-serif;
+      color: var(--gradient_first);
+      color: var(--gradient_first);
+   }
+
+   /* FORM'S DIV STYLE
+      ========================================================================== */
+   div.signup_form_container {
+      margin: 0 auto;
+      margin-top: 4rem;
+      width: 40rem;
+      height: 50rem;
+      text-align: center;
+      background-color: var(--dark_third);
+      display: flex; /* contexte sur le parent */
+      flex-direction: column; /* direction d'affichage verticale */
+      box-shadow: 0 0 25px -8px var(--dark_fourth);
+   }
+
+   /* FORM STYLE
+      ========================================================================== */
+   form.signup_form {
+      margin-top: 5rem;
+      display: flex; /* contexte sur le parent */
+      flex-direction: column; /* direction d'affichage verticale */
+      justify-content: center; /* alignement vertical */
+   }
+
+   /* Labels */
+   form.signup_form label {
+      font-size: 150%;
+      margin: 0 auto;
+   } 
+
+   /* Inputs */
+   form.signup_form input {
+      margin: 0 auto;
+      padding: 0.7rem;
+      width: 20rem;
+      outline: none;
+      background-color: var(--dark_third);
+      border: var(--gradient_third) solid 2px;
+      border-radius: 1.4rem;
+      color: var(--gradient_first);
+      transition-duration: 0.3s;
+   }
+
+   form.signup_form input:focus {
+      border: var(--gradient_second) solid 2px;
+   }
+
+   form.signup_form input.signup_space {
+      margin-bottom: 15px;
+   }
+
+   form.signup_form input[type="submit"] {
+      background-color: var(--gradient_third);
+      border: var(--gradient_third) solid 2px;
+      font-size: 120%;
+      cursor: pointer;
+      transition-duration: 0.3s;
+   }
+
+   form.signup_form input[type="submit"]:hover {
+      background-color: var(--gradient_second);
+      border: var(--gradient_second) solid 2px;
+   }
+
+   /* Error span */
+   form.signup_form span.signup_error {
+      color: var(--gradient_second);
+      font-size: 80%;
+      margin-bottom: 0.3rem;
+      margin-top: 0.3rem;
+   }
+
+   /* SIGNIN LINK PROPERTIES
+      ========================================================================== */
+   div.signup_form_container p.signin_paragraph {
+      margin-top: 1rem;
+      font-size: 70%;
+   }
+
+   /* Link */
+   div.signup_form_container p.signin_paragraph a.signin_link {
+      text-decoration: none;
+      color: var(--gradient_second);
+   }
+}
+
+/* MOBILE STYLE
+   ========================================================================== */
+@media screen and (max-width: 800px) {
+   
+   /* BODY PROPERTIES
+      ========================================================================== */
+   body {
+      background-color: var(--dark_third);
+      font-family: 'Merriweather Sans', sans-serif;
+      color: var(--gradient_first);
+      color: var(--gradient_first);
+   }
+
+   /* FORM'S DIV STYLE
+      ========================================================================== */
+   div.signup_form_container {
+      margin: 0 auto;
+      padding-bottom: 10rem;
+      width: 70vw;
+      height: 50rem;
+      text-align: center;
+      display: flex; /* contexte sur le parent */
+      flex-direction: column; /* direction d'affichage verticale */
+   }
+
+   /* FORM STYLE
+      ========================================================================== */
+   form.signup_form {
+      margin-top: 5rem;
+      display: flex; /* contexte sur le parent */
+      flex-direction: column; /* direction d'affichage verticale */
+      justify-content: center; /* alignement vertical */
+   }
+
+   /* Labels */
+   form.signup_form label {
+      font-size: 150%;
+      margin: 0 auto;
+   } 
+
+   /* Inputs */
+   form.signup_form input {
+      margin: 0 auto;
+      padding: 0.7rem;
+      width: 18rem;
+      outline: none;
+      background-color: var(--dark_third);
+      border: var(--gradient_third) solid 2px;
+      border-radius: 1.4rem;
+      color: var(--gradient_first);
+      transition-duration: 0.3s;
+   }
+
+   form.signup_form input:focus {
+      border: var(--gradient_second) solid 2px;
+   }
+
+   form.signup_form input.signup_space {
+      margin-bottom: 15px;
+   }
+
+   form.signup_form input[type="submit"] {
+      background-color: var(--gradient_third);
+      border: var(--gradient_third) solid 2px;
+      font-size: 120%;
+      cursor: pointer;
+      transition-duration: 0.3s;
+   }
+
+   form.signup_form input[type="submit"]:hover {
+      background-color: var(--gradient_second);
+      border: var(--gradient_second) solid 2px;
+   }
+
+   /* Error span */
+   form.signup_form span.signup_error {
+      color: var(--gradient_second);
+      font-size: 80%;
+      margin-bottom: 0.3rem;
+      margin-top: 0.3rem;
+   }
+
+   /* SIGNIN LINK PROPERTIES
+      ========================================================================== */
+   div.signup_form_container p.signin_paragraph {
+      margin-top: 1rem;
+      font-size: 70%;
+   }
+
+   /* Link */
+   div.signup_form_container p.signin_paragraph a.signin_link {
+      text-decoration: none;
+      color: var(--gradient_second);
+   }
+}

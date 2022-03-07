@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="/css/root.css">
+    <%- include('../partials/head'); %>
+    <link rel="stylesheet" href="/css/signup.css">
+</head>
+<body>
+
+<header>
+    <%- include('../partials/header'); %>
+</header>
+
+<main>
+    <div class="signup_form_container" id="signup_form_container">
+        <form class="signup_form" method="post" id="signup_form">
+
+            <label for="realName">NOM RÉEL</label>
+            <br>
+            <span class="signup_error"> <%= errors.realName %> </span>
+            <input class="signup_space" placeholder="a-z A-Z" type="text" name="realName" required minlength="2"><br>
+
+            <label for="pseudonyme">PSEUDONYME</label>
+            <br>
+            <span class="signup_error"> <%= errors.pseudonyme %> </span>
+            <input class="signup_space" placeholder="a-z A-Z 0-9, -, _" type="text" name="pseudonyme" required maxlength="14"><br>
+
+            <label for="email">EMAIL</label>
+            <br>
+            <span class="signup_error"> <%= errors.email %> </span>
+            <input class="signup_space" placeholder="test@example.dot" type="email" name="email" required minlength="8"><br>
+
+            <label for="password">MOT DE PASSE</label>
+            <br>
+            <span class="signup_error"> <%= errors.password %> </span>
+            <input class="signup_space" placeholder="a-z A-Z 0-9, -, _" type="password" name="password" required minlength="8"><br>
+            
+            <label for="confirmedPassword">CONFIRMER MDP</label>
+            <br>
+            <span class="signup_error" value=""> <%= errors.confirmedPassword %> </span>
+            <input class="signup_space" placeholder="a-z A-Z 0-9, -, _" type="password" name="confirmedPassword" required minlength="8"><br>
+            
+            <script>
+                document.getElementById("signup_form").reset();
+            </script>
+            <input type="submit" value="Valider">
+        </form>
+        <p class="signin_paragraph">Vous avez déjà un compte ? <a href="/signin" class="signin_link">Connectez vous.</a></p>
+    </div>
+</main>
+
+</body>
+</html>

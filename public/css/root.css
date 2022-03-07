@@ -1,0 +1,52 @@
+/* ==========================================================================
+   #STYLES
+   ========================================================================== */
+
+
+/**
+ *
+ * [1]: Inheriting box sizing slightly better best-practice
+ * https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ *
+ * [2]: WordPress System font-stack
+ */
+
+
+/* RESET
+   ========================================================================== */
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit; /* [1] */
+  margin: 0;
+  padding: 0;
+}
+
+/* VARIABLES / COLORS
+   ========================================================================== */
+   
+/* https://www.colorhunt.co/palette/525252414141313131ca3e47 */
+/* https://www.colorhunt.co/palette/ffe6e6ff2626bd1616000000 */
+
+:root {
+	--gradient_first: #FFE6E6;
+	--gradient_second: #FF2626;
+	--gradient_third: #BD1616;
+	
+	--dark_first: #525252;
+	--dark_second: #414141;
+	--dark_third: #313131;
+	--dark_fourth: #111111;
+	--dark_red: #CA3E47;
+	
+	--font_black: #000000;
+}
+
+@font-face {
+   font-family: "Manga";
+   src: url('../fonts/manga/Manga.otf');
+}

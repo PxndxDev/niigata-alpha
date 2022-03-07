@@ -1,0 +1,17 @@
+/* HEADER DESIGN
+    ========================================================================== */
+header {
+    background-color: var(--gradient_third);
+    text-align: left;
+    font-family: "Manga";
+    font-size: 180%;
+    box-shadow: 0 0 25px -15px var(--dark_fourth);
+}
+header h1 {
+    vertical-align: middle;
+    padding: 1rem;
+}
+header a {
+    text-decoration: none;
+    color: var(--gradient_first);
+}
